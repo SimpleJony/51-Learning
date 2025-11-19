@@ -1,0 +1,16 @@
+#include <Atmel/REGX52.H>
+#include "include/Delay.h"
+#include "include/UART.h"
+
+unsigned char sec;
+
+void main()
+{
+    Uart_Init();
+    while(1)
+    {
+        Uart_SendByte(sec);
+        sec++;
+        Delay(1000);
+    }
+}
