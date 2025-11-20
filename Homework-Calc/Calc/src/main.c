@@ -5,7 +5,8 @@
 #include "include/LCD1602.h"
 
 unsigned char Key;
-int res,num,temp,ctrl,pre_opt; //pre_opt来记录上一次的运算符
+unsigned char pre_opt;
+int res,num,temp,ctrl; //pre_opt来记录上一次的运算符
 
 void main()
 {
